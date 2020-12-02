@@ -10,8 +10,6 @@ import (
 	"golang.org/x/mod/semver"
 )
 
-const ()
-
 func cdIntoRepo(repo string) error {
 	if repo == "" {
 		return nil
