@@ -22,7 +22,7 @@ which is a structured way of creating version numbers.
 ```
 # Download and install the tool.
 # Hey look - go get also uses semantic versioning!
-go get -u github.com/shortmoose/getversion@v0.1
+go get -u github.com/shortmoose/getversion@v0
 
 # Clone the repository. 
 git clone https://github.com/<repo>
