@@ -1,5 +1,12 @@
 # getversion
 
+
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/github.com/shortmoose/getversion)
+[![Go Report Card](https://goreportcard.com/badge/shortmoose/getversion)](https://goreportcard.com/report/shortmoose/getversion)
+[![Releases](https://img.shields.io/github/release-pre/shortmoose/getversion.svg?sort=semver)](https://github.com/shortmoose/getversion/releases)
+[![LICENSE](https://img.shields.io/github/license/shortmoose/getversion.svg)](https://github.com/shortmoose/getversion/blob/master/LICENSE)
+
+
 This tool is designed to help bridge the gap between which version of a
 repository is needed and which version of the repository best matches that
 need. For example if you want version 1.1 of a repository, that likely means you
