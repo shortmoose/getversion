@@ -1,0 +1,24 @@
+#!/bin/bash
+
+for x in e2e-tests/*$1*; do
+    if [ -d "$x" ]; then
+        continue
+    fi
+
+    echo "#####################"
+    echo "$x"
+
+    # Run test
+    $x
+
+    if [ "$?" -ne 0 ]; then
+        echo
+        echo "Failed $x"
+        exit 1
+    fi
+    
+    echo "$x"
+    echo "#####################"
+done
+
+rm -fr tmp test-data

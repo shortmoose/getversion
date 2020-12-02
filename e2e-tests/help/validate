@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -ex
+
+cd test-data
+
+COMMIT=`git log -1 --pretty='format:%h'`
+if [ "$COMMIT" != "$1" ]; then
+    echo Unexpected commit: $COMMIT not $1
+    exit 1
+fi

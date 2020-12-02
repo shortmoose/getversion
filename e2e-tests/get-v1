@@ -1,0 +1,14 @@
+#!/bin/bash
+
+. e2e-tests/help/setup
+
+./getversion test-data@v0.3 >tmp && fail "We shouldn't have found v1"
+
+OUT=`grep "version not found" tmp`
+
+if [ -z "$OUT" ]; then
+    echo bad
+    exit 1 
+fi
+
+e2e-tests/help/validate 5b7ac4b

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -ex
+
+function fail {
+    echo $1
+    exit 1
+}
+
+rm -fr test-data/
+
+tar -xzf test-data.tgz
